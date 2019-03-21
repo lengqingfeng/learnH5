@@ -1,0 +1,35 @@
+.menuItem {
+    position: absolute;
+    display:Inline;
+    left:10%;
+    right:10%;
+    height: 80px;
+    background: green;
+    bottom: 40px;
+}
+
+.rock {
+    float:left;
+    height: 60px;
+    width: 60px;
+    background-color: red;
+    margin-top: 10px;
+    margin-left: 10%;
+}
+.shear {
+    float:left;
+    height: 60px;
+    width: 60px;
+    background-color: yellow;
+    margin-top: 10px;
+    margin-left: 10%;
+}
+
+.fabric {
+    float:left;
+    height: 60px;
+    width: 60px;
+    background-color: yellowgreen;
+    margin-top: 10px;
+    margin-left: 10%;
+}
