@@ -4,32 +4,34 @@
     left:10%;
     right:10%;
     height: 80px;
-    background: green;
-    bottom: 40px;
+    background: white;
+    bottom: 60px;
+    text-align: center
 }
 
-.rock {
-    float:left;
+.stone, .shear, .fabric{
+    display: inline-block;
     height: 60px;
     width: 60px;
-    background-color: red;
-    margin-top: 10px;
-    margin-left: 10%;
+    background-repeat:no-repeat;
 }
-.shear {
-    float:left;
-    height: 60px;
-    width: 60px;
-    background-color: yellow;
+
+.stone {
+    background-image:url(image/image2.png);
     margin-top: 10px;
-    margin-left: 10%;
+    margin-right: 30px;
+    background-size: 36px,58px;
+}
+
+.shear {
+    background-image:url(image/image1.png);
+    margin-top: 10px;
+    background-size: 36px,58px;
 }
 
 .fabric {
-    float:left;
-    height: 60px;
-    width: 60px;
-    background-color: yellowgreen;
+    background-image:url(image/image3.png);
     margin-top: 10px;
-    margin-left: 10%;
+    margin-left: 30px;
+    background-size: 49px,58px;
 }
