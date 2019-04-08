@@ -6,15 +6,75 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>猜拳小游戏</title>
     <link rel="stylesheet" href="fingerplay.css">
+    <script>
+        var imageArray = ["url(image/image1.png)","url(image/image2.png)","url(image/image3.png)"]
+       
+        function changeMyImageIndex (index) {
+            var myResult = document.getElementsByClassName("myItem");
+            if(myResult[0]) {
+                myResult[0].style.backgroundImage = imageArray[index]; 
+            }  
+        }
+
+        function changeRobotImageIndex (index) {
+            var myResult = document.getElementsByClassName("robotItem");
+            if(myResult[0]) {
+                myResult[0].style.backgroundImage = imageArray[index]; 
+            }  
+        }
+
+        //石头
+        function stoneAction () {
+            console.log('石头');
+            changeMyImageIndex(1);
+            robotAction();
+        }
+        //剪刀
+        function shearAction () {
+            console.log('剪刀');
+            changeMyImageIndex(0);
+            robotAction();
+        }
+        //布
+        function fabricAction () {
+            console.log('布');
+            changeMyImageIndex(2);
+            robotAction();
+        }
+        //机器人
+        function  robotAction () {
+            var randomNum = Math.floor(Math.random() * 3); 
+            changeRobotImageIndex(randomNum);
+            console.log('机器人' + randomNum);
+        }
+    </script>
 </head>
+
 <body>
     <div class="menuItem">
-        <div class="item stone">
+        <div class="item stone" onclick="stoneAction()">
         </div>
-        <div class="shear">
+        <div class="shear" onclick="shearAction()">
         </div>
-        <div class="fabric">
+        <div class="fabric" onclick="fabricAction()">
         </div>
     </div>
+
+    <div class="canvasItem">
+        <div class="myItem">
+            <div class="itemTip">
+                我方
+            </div>
+        </div> 
+        <div class="vsItem">
+            VS
+        </div>
+        <div class="robotItem">
+            <div class="itemTip">
+                机器人
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

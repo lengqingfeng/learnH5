@@ -1,3 +1,46 @@
+
+/* 
+通过 flex 布局
+*/ 
+.canvasItem {
+    display: flex;
+    margin-top: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content:center;
+}
+
+
+.vsItem {
+    font-size: 48px;
+    text-align:center;
+    line-height: 120px;
+}
+
+.myItem {
+    margin-right: 10px;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.itemTip {
+    text-align:center;
+    font-size: 16px;
+    margin-top: 0px;
+}
+.robotItem {
+    margin-left: 10px;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.myItem ,.robotItem,.vsItem {
+    width: 120px;
+    height:120px; 
+}
+
+/* 
+通过绝对定位居中
+*/ 
 .menuItem {
     position: absolute;
     display:Inline;
@@ -5,19 +48,21 @@
     right:10%;
     height: 80px;
     background: white;
-    bottom: 60px;
+    bottom: 20%;
     text-align: center
 }
+
 
 .stone, .shear, .fabric{
     display: inline-block;
     height: 60px;
     width: 60px;
-    background-repeat:no-repeat;
 }
 
 .stone {
     background-image:url(image/image2.png);
+    background-repeat:no-repeat;
+    background-position:center;
     margin-top: 10px;
     margin-right: 30px;
     background-size: 36px,58px;
@@ -25,12 +70,16 @@
 
 .shear {
     background-image:url(image/image1.png);
+    background-repeat:no-repeat;
+    background-position:center;
     margin-top: 10px;
     background-size: 36px,58px;
 }
 
 .fabric {
     background-image:url(image/image3.png);
+    background-repeat:no-repeat;
+    background-position:center;
     margin-top: 10px;
     margin-left: 30px;
     background-size: 49px,58px;
