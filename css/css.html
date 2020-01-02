@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <style>
+    .style1 {
+      background-color: aqua;
+      text-align: center;
+    }
+    .style2 {
+      background-color: aqua;
+      height: 44px;
+      line-height: 44px;
+      text-align: center;
+    }
+    .style3 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: red;
+      height: 44px;
+    }
+
+    .style4 {
+      display: flex;
+      background-color: yellow;
+      height: 44px;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+
+    .style41 {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: red;
+      margin-right: 7.5px;
+    }
+
+    .style42 {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: red;
+      margin-left: 7.5px;
+    }
+
+    .style5 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 64px;
+      background-color: red;
+    }
+
+    .style51 {
+      width: 50px;
+      background-color: red;
+      height: 64px;
+    }
+    .style52 {
+      flex: 1;
+      background-color: blueviolet;
+      height: 64px;
+    }
+    .style53 {
+      width: 50px;
+      background-color: red;
+      height: 64px;
+    }
+
+    .style6 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: black;
+      height: 44px;
+    }
+
+    .style61 {
+      flex: 1;
+      background-color: red;
+      height: 44px;
+    }
+    .style61 + .style61 {
+      margin-left: 10px;
+    }
+  </style>
+  <body>
+    <h3>CSS 常用布局</h3>
+    <h5>文本垂直局中布局</h5>
+    <div class="style1">
+      hellow world
+    </div>
+
+    <h5>有固定高度 line-height 垂直局中布局</h5>
+    <div class="style2">
+      hellow allen
+    </div>
+    <h5>有固定高度 flex 垂直局中布局</h5>
+    <div class="style3">
+      hellow flex
+    </div>
+    <h5>水平二等分布局</h5>
+    <div class="style4">
+      <div class="style41">
+        left
+      </div>
+      <div class="style42">
+        right
+      </div>
+    </div>
+    <h5>圣杯布局</h5>
+    <div>圣杯布局就是左右两边大小固定不变，中间宽度自适应</div>
+    <div div class="style5">
+      <div class="style51"></div>
+      <div class="style52"></div>
+      <div class="style53"></div>
+    </div>
+    <h5>多列等分布局</h5>
+    <div class="style6">
+      <div class="style61"></div>
+      <div class="style61"></div>
+      <div class="style61"></div>
+      <div class="style61"></div>
+    </div>
+  </body>
+</html>
